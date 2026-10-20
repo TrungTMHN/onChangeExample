@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+    <html>
+    <body>
+    <p>Select your hometown from the list.</p>
+    <select id="mySelect" onchange="myFunction()">
+        <option value="Ninh Binh">Ninh Binh</option>
+        <option value="Ha Noi">Ha Noi</option>
+        <option value="Ho Chi Minh City">Ho Chi Minh City</option>
+        <option value="Hai Phong">Hai Phong</option>
+    </select>
+    <p id="demo"></p>
+    <script>
+        function myFunction() {
+        var x = document.getElementById("mySelect").value;
+        document.getElementById("demo").innerHTML = "You was born in: " + x;
+        }
+    </script>
+</body>
+</html>
